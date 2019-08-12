@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/gonlem/TicketAPI#readme",
   "dependencies": {
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "swagger-ui-express": "^4.0.7"
   }
 }
