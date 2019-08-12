@@ -1,7 +1,7 @@
 {
   "name": "ticketapi",
   "version": "1.0.0",
-  "description": "",
+  "description": "Service which generates unique tickets",
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

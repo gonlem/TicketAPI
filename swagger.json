@@ -8,8 +8,7 @@
   "paths": {
     "/getTicket": {
       "get": {
-        "summary": "",
-        "description": "",
+        "summary": "Get one ticket",
         "responses": {
           "200": {
             "description": "OK",
@@ -26,8 +25,7 @@
     },
     "/getTickets": {
       "get": {
-        "summary": "",
-        "description": "",
+        "summary": "Get many tickets",
         "parameters": [
           {
             "name": "count",

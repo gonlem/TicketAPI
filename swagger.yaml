@@ -1,24 +1,22 @@
 openapi: 3.0.2
 info:
-  title: "Ticket Generator API"
-  description: "Service which generates unique tickets"
+  title: Ticket Generator API
+  description: Service which generates unique tickets
   version: 1.0.0
 paths:
-  '/getTicket':
+  /getTicket:
     get:
-      summary: "Get one ticket"
-      description: ""
+      summary: Get one ticket
       responses:
         '200':
           description: OK
           content:
-            'application/json':
+            application/json:
               schema:
                 $ref: '#/components/schemas/Ticket'
-  '/getTickets':
+  /getTickets:
     get:
-      summary: "Get many tickets"
-      description: ""
+      summary: Get many tickets
       parameters:
         - name: count
           in: query
@@ -30,14 +28,14 @@ paths:
         '200':
           description: OK
           content:
-            'application/json':
+            application/json:
               schema:
                 type: array
                 items:
                   $ref: '#/components/schemas/Ticket'
 components:
   schemas:
-    'Ticket':
+    Ticket:
       type: string
       minLength: 13
       maxLength: 13
